@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="chat.css">
+    <script src="chat.js"></script>
+</head>
+<body>
+
+<script src="chat.js"></script>
+    <div class='container' ng-cloak ng-app="chatApp">
+  <h1>Chat</h1>
+
+  <div class='chatbox' ng-controller="MessageCtrl as chatMessage">
+    <div class='chatbox__user-list'>
+      <h1>Friends</h1>
+      <div class='chatbox__user--active'>
+        <p>Phaotong</p>
+      </div>
+      <div class='chatbox__user--busy'>
+        <p>Tanapol</p>
+      </div>
+      <div class='chatbox__user--active'>
+        <p>Narawich</p>
+      </div>
+      <div class='chatbox__user--active'>
+        <p>Steve</p>
+      </div>
+      <div class='chatbox__user--away'>
+        <p>John</p>
+      </div>
+    </div>
+    <div class="chatbox__messages" ng-repeat="message in messages">
+      <div class="chatbox__messages__user-message">
+        <div class="chatbox__messages__user-message--ind-message">
+          <p class="name">Tanapol</p>
+<!--          <p class="name">{{message.Name}}</p>-->
+          <br/>
+          <p class="message">Hello!</p>
+<!--          <p class="message">{{message.Message}}</p>-->
+        </div>
+      </div>
+    </div>
+    <form>
+      <input type="text" placeholder="Enter your message">
+    </form>
+  </div>
+      <a href="mainpage.html" style="padding: 2%;"><img src="https://image.flaticon.com/icons/png/512/0/340.png" width="50px"; height="50px";></a>
+    </div>
+
+</body>
+</html>
