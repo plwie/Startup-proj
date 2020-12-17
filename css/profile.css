@@ -1,0 +1,16 @@
+.profile-head {
+    transform: translateY(5rem)
+}
+
+.cover {
+    background: rgb(34,9,168);
+    background: linear-gradient(180deg, rgba(34,9,168,1) 0%, rgba(113,0,208,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+body {
+    background: rgb(255,0,128);
+    background: linear-gradient(306deg, rgba(255,0,128,1) 0%, rgba(135,0,128,1) 30%, rgba(88,104,165,1) 70%, rgba(0,255,230,1) 100%);
+    min-height: 100vh
+}
